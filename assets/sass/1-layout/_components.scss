@@ -1,0 +1,147 @@
+.accordion {
+    &__card {
+        margin-bottom: 2.5rem;
+    }
+    
+    &__tab {
+        background-color: $amarelo-claro;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        padding: 0 4.2rem 0 3.1rem;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '-';
+            position: absolute;
+            right: 4.2rem;
+            font-family: $kanit;
+            font-weight: 600;
+            font-size: 5.4rem;
+            color: $vermelho;
+        }
+    }
+
+    &__date {
+        color: $vermelho;
+        font-size: 4rem;
+        font-weight: 600;
+        font-family: $kanit;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $azul;
+    }
+
+    &__info {
+        display: none;
+
+        .wrapper {
+            margin: 3rem auto;
+            max-width: 1062px;
+            width: 90%;
+
+            & > * {
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 2.5rem;
+                color: $preto;
+            }
+
+            a {
+                font-weight: 600;
+                color: $vermelho;
+            }
+        }
+    }
+}
+
+.titulo {
+    font-family: $kanit;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 500;
+    color: $vermelho;
+
+    position: relative;
+    width: fit-content;
+    margin-bottom: 4rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -.9rem;
+        left: 0;
+        width: 150%;
+        height: .3rem;
+        background-color: $amarelo;
+
+        @include sm {
+            width: 100%;
+        }
+    }
+}
+
+.button {
+    max-width: 19.7rem;
+    width: 100%;
+    height: 4.9rem;
+
+    border: .1rem solid $azul-claro;
+    border-radius: .2rem;
+    background-color: $azul-claro;
+    padding: 0 !important;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: $branco !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6.1rem;
+
+    &-before, &-after {
+        width: .638rem;
+        height: 1.015rem;
+        margin-right: .916rem;
+        cursor: pointer;
+    }
+
+    &-after {
+        transform: rotate(-180deg);
+    }
+
+    &-numeros {
+        font-size: 1.4rem;
+        font-family: 'Kanit', sans-serif;
+        display: flex;
+
+        a {
+            width: 2.4rem;
+            height: 2.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    &-numero--active {
+        color: $azul-claro; 
+        box-shadow: inset 0px 0px 0px 1px $azul-claro;
+        border-radius: .2rem;
+    }
+}

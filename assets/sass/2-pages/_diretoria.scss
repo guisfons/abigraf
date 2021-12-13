@@ -1,0 +1,23 @@
+.diretoria {
+    margin: 6.1rem auto 17.5rem;
+
+    &__container {
+        column-count: 2;
+        margin-bottom: 6.5rem;
+
+        @include sm {
+            column-count: 1;
+        }
+
+        article {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            margin-bottom: 2.5rem;
+
+            span {
+                font-size: 1.6rem;
+                display: block;
+            }
+        }
+    }
+}
