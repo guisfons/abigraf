@@ -1,4 +1,5 @@
 .main-slider {
+    border-bottom: .3rem solid $vermelho;
 
     &.wrapper {
         @include sm {
@@ -241,6 +242,88 @@
             font-weight: 500;
             color: #5B5B5B;
             cursor: pointer;
+        }
+    }
+}
+
+.faixa-amarela {
+    background-color: $amarelo-claro;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin: 8.5rem auto 11.7rem;
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            margin-top: 7rem;
+        }
+    }
+
+    &__item {
+        max-width: 35rem;
+        width: 100%;
+        height: 35rem;
+        position: relative;
+        background-color: #F0F5F8;
+
+        -webkit-box-shadow: 1px 1px 1px 0px rgba(243,243,242,1);
+        -moz-box-shadow: 1px 1px 1px 0px rgba(243,243,242,1);
+        box-shadow: 1px 1px 1px 0px rgba(243,243,242,1);
+
+        cursor: pointer;
+
+        &:hover article {
+            opacity: 1;
+        }
+
+        span {
+            font-family: $kanit;
+            font-size: 3rem;
+            font-weight: 500;
+            color: #055EB0;
+            margin: auto 0 5.8rem;
+            max-width: 16.5rem;
+            text-align: center;
+        }
+
+        article {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            opacity: 0;
+            transition: .3s all;
+        }
+
+        p {
+            margin-top: 6.5rem;
+            max-width: 30.5rem;
+            font-size: 2.1rem;
+            font-weight: 500;
+            color: $branco;
+            text-align: center;
+        }
+
+        .button {
+            margin-bottom: 4.2rem;
         }
     }
 }
