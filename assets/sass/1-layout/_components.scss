@@ -152,8 +152,16 @@
     align-items: center;
     margin: 5.4rem auto 3.6rem;
 
+    @include sm {
+        flex-direction: column;
+    }
+
     .titulo {
         margin-bottom: 0;
+
+        @include sm {
+            margin-bottom: 3rem;
+        }
     }
 
     label {
