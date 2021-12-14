@@ -1,0 +1,53 @@
+.noticias {
+    margin-bottom: 4.4rem;
+    
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.861rem;
+        border-bottom: .1rem solid #DCDCDC;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    &__date {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+        color: $azul;
+    }
+
+    &__category {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+        color: $azul;
+        text-transform: uppercase;
+        margin: .9rem 0 1.3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+        color: $vermelho;
+        margin-bottom: .9rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+    }
+
+    a {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+        color: $azul;
+        width: fit-content;
+        margin-top: 2.5rem;
+    }
+}
