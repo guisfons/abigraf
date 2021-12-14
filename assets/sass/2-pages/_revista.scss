@@ -11,9 +11,12 @@
         margin: 6.3rem auto 8.1rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         column-gap: 6rem;
         row-gap: 7.9rem;
+
+        @include sm {
+            justify-content: center;
+        }
 
         article {
             display: flex;
