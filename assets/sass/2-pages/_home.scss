@@ -38,6 +38,17 @@
             }
         }
     }
+
+    map {
+        svg {
+            height: fit-content;
+            max-width: 41.5rem;
+
+            a path {
+                fill: $vermelho !important;
+            }
+        }
+    }
 }
 
 .linknews-home {
@@ -140,32 +151,32 @@
 
 .ultimas-noticias {
     max-width: 60.5rem;
+}
 
-    .noticias__card {
-        h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #DE1026;
-            line-height: 2.4rem;
-            margin-bottom: 1.1rem;
-        }
+.noticias__card {
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #DE1026;
+        line-height: 2.4rem;
+        margin-bottom: 1.1rem;
+    }
 
-        p {
-            font-size: 1.8rem;
-            font-weight: 500;
-            line-height: 2.2rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            margin-bottom: 1.539rem;
-        }
+    p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 1.539rem;
+    }
 
-        a {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: #12304D;
-        }
+    a {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #12304D;
     }
 }
 
