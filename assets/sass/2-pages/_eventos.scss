@@ -81,46 +81,97 @@
 
 /* Eventos */
 
-.eventos-anteriores {
-    margin: 6.9rem auto 4.4rem;
-}
+.eventos {
+    margin: 4.8rem auto 4.3rem;
 
-.eventos-anteriores-card {
-    display: flex;
-    flex-direction: column;
-    border-bottom: .1rem solid #DCDCDC;
-}
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5rem;
+        row-gap: 5rem;    
+    }
 
-.eventos-anteriores-card:not(:first-of-type) {
-    margin-top: 2.7rem;
-}
+    &__card {
+        display: flex;
+        flex-direction: column;
+        max-width: 32.8rem;
 
-.eventos-anteriores-card span {
-    font-size: 1.8rem;
-    color: #FA5B37;
-}
+        span {
+            display: flex;
+            align-items: center;
+            font-size: 4.5rem;
+            font-weight: 600;
+            color: $vermelho;
+            font-family: $kanit;
+            margin-bottom: 5.3rem;
 
-.eventos-anteriores-card article {
-    margin: 1.5rem 0 1.8rem;
-}
+            img {
+                margin-right: 2.3rem;
+            }
+        }
 
-.eventos-anteriores-card article h4 {
-    font-size: 1.8rem;
-    margin-bottom: 1.1rem;
-}
+        h4 {
+            font-size: 2rem;
+            color: $vermelho;
+            line-height: 2.4rem;
+            font-weight: 800;
+        }
 
-.eventos-anteriores-card article p {
-    font-size: 1.6rem;
-    font-weight: 600;
-}
+        p {
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+            color: #050000;
+        }
 
-.eventos-anteriores-card a {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #FA5B37;
-    margin-bottom: 2.51rem;
+        a {
+            max-width: 21.4rem;
+            margin-top: 3rem;
+        }
+    }
+
+    &-anteriores {
+        margin: 6.9rem auto 4.4rem;
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            border-bottom: .1rem solid #DCDCDC;
+
+            &:not(:first-of-type) {
+                margin-top: 2.7rem;
+            }
+
+            span {
+                font-size: 1.8rem;
+                color: #FA5B37;
+            }
+
+            article {
+                margin: 1.5rem 0 1.8rem;
+
+                h4 {
+                    font-size: 1.8rem;
+                    margin-bottom: 1.1rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+
+                a {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #FA5B37;
+                    margin-bottom: 2.51rem;
+                }
+            }
+            
+        }
+    }
 }
 
 @media (max-width: 900px) {

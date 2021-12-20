@@ -19,7 +19,7 @@
         position: absolute;
         top: 50%;
         font-size: 0;
-        background-image: url(/assets/images/icons/arrow-slider.svg);
+        background-image: url(../images/icons/arrow-slider.svg);
         background-repeat: no-repeat;
         background-position: center center;
         width: 6rem;
@@ -129,6 +129,10 @@
             width: 100%;
         }
     }
+
+    &--azul {
+        color: $azul-escuro;
+    }
 }
 
 .button {
@@ -227,7 +231,7 @@
             right: 0;
             pointer-events: none;
 
-            background-image: url('/assets/images/icons/arrow-date.svg');
+            background-image: url('../images/icons/arrow-date.svg');
             background-repeat: no-repeat;
             background-position: center center;
         }        
@@ -248,6 +252,10 @@
 
 .faixa-amarela {
     background-color: $amarelo-claro;
+
+    .titulo::after {
+        display: none;
+    }
 }
 
 .cards {
@@ -257,6 +265,29 @@
     column-gap: 3rem;
     row-gap: 3rem;
     margin: 8.5rem auto 11.7rem;
+
+    &--nolink {
+        .cards__item {
+            max-width: 44.5rem;
+            height: 44.5rem;
+
+            p {
+                line-height: 3rem;
+            }
+
+            .cards__icon {
+                justify-content: center;
+
+                img {
+                    margin: 0 0 2rem;
+                }
+
+                span {
+                    margin: 0 0 0;
+                }
+            }
+        }
+    }
 
     &__icon {
         width: 100%;

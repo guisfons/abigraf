@@ -5,6 +5,7 @@
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
     position: relative;
+    z-index: 2;
 
     &__top {
         background-color: $vermelho;
@@ -163,6 +164,7 @@
                 font-weight: 600;
                 width: 100%;
                 min-height: 4rem;
+                margin: 0;
             }
         }
 
