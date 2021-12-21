@@ -31,7 +31,9 @@ $(document).ready(function(){
 
     function accordion () {
         $('.accordion__tab').on('click', function () {
-            console.log('teste');
+            $('.accordion__card').removeClass('accordion__card--open');
+            $(this).parent('.accordion__card').addClass('accordion__card--open');
+            $('.accordion__info').hide();
             $(this).siblings('.accordion__info').toggle();
         })
     }
