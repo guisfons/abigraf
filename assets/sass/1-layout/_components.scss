@@ -44,9 +44,14 @@
         transform: translateY(-50%) rotate(180deg);
     }
 }
+
 .accordion {
     &__card {
         margin-bottom: 2.5rem;
+
+        &--open .accordion__tab::after {
+            content: '-';
+        }
     }
     
     &__tab {
@@ -59,7 +64,7 @@
         cursor: pointer;
 
         &::after {
-            content: '-';
+            content: '+';
             position: absolute;
             right: 4.2rem;
             font-family: $kanit;
@@ -154,7 +159,6 @@
     align-items: center;
     cursor: pointer;
 }
-
 
 .paginacao {
     display: flex;
@@ -256,6 +260,42 @@
     .titulo::after {
         display: none;
     }
+
+    &__itens {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+        padding: 3.4rem 0 5.7rem;
+
+        .titulo {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .7rem;
+        max-width: 33.33%;
+        width: 100%;
+
+        img {
+            max-width: fit-content;
+        }
+
+        span {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $font;
+            line-height: 2.4rem;
+            text-align: center;
+        }
+    }
 }
 
 .cards {
@@ -356,5 +396,56 @@
         .button {
             margin-bottom: 4.2rem;
         }
+    }
+}
+
+/* Inputs */
+
+.input {
+    max-height: 4.4rem;
+    min-height: 4.4rem;
+    height: 100%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.4rem 1.7rem;
+    border: 1px solid #635E5E;
+    outline: none;
+    
+    &-full {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+    
+    &-big {
+        flex: 1 0 54rem;
+    }
+    
+    &-half {
+        flex: 1 0 44.5rem;
+    }
+    
+    &-medium {
+        flex: 1 0 35rem;
+    }
+    
+    &-small {
+        flex: 1 0 25.5rem;
+    }
+    
+    &-smallest {
+        flex: 1 0 16rem;
+    }
+}
+
+.conteudo-texto {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: $font;
+    white-space: pre-line;
+
+    a {
+        color: $vermelho;
+        font-weight: 800;
     }
 }
