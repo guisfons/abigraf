@@ -61,6 +61,9 @@ $(document).ready(function(){
 
     function accordion () {
         $('.accordion__tab').on('click', function () {
+            if($(this).parent('.accordion__card').hasClass('accordion__card--open')) {
+                $(this).parent('.accordion__card').removeClass('accordion__card--open')
+            }
             $(this).parent('.accordion__card').addClass('accordion__card--open');
             $(this).siblings('.accordion__info').toggle();
         })
