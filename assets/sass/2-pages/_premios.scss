@@ -1,0 +1,33 @@
+.premios {
+    margin-top: 6.1rem;
+}
+
+.imagem-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 2.5rem;
+    margin: 4.4rem auto 0;
+
+    img {
+        max-width: 44.2rem;
+        width: 100%;
+        height: 22rem;
+        object-fit: cover;
+
+        @include sm {
+            max-width: 100% !important;
+        }
+
+        &:nth-of-type(3) {
+            max-width: 63rem;
+            height: 21.7rem;
+        }
+
+        &:nth-of-type(4) {
+            max-width: 25.5rem;
+            height: 21.7rem;
+        }
+    }
+}
