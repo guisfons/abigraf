@@ -245,7 +245,7 @@
                                 id="path66" />
                         </a>
                     </g>
-                    <g id="Bahina">
+                    <g id="Bahia">
                         <a xlink:href="https://www.google.com" style="cursor: pointer" target="_blank">
                             <path
                                 style="fill:#DE1026;stroke:#ffffff;stroke-width:282.23678589;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -352,22 +352,29 @@
                     </g>
                 </svg>
                 <div class="points">
-                    <img class="points-flg alagoas" data-estado="para" src="./assets/images/icons/AL.svg" alt="">
-                    <img class="points-flg bahia" data-estado="para" src="./assets/images/icons/BA.svg" alt="">
-                    <img class="points-flg distrito_federal" data-estado="para" src="./assets/images/icons/DF.svg" alt="">
-                    <img class="points-flg espirito_santo" data-estado="para" src="./assets/images/icons/ES.svg" alt="">
-                    <img class="points-flg goias" data-estado="para" src="./assets/images/icons/GO.svg" alt="">
-                    <img class="points-flg minas_gerais" data-estado="para" src="./assets/images/icons/MG.svg" alt="">
-                    <img class="points-flg mato_grosso_do_sul" data-estado="para" src="./assets/images/icons/MS.svg" alt="">
-                    <img class="points-flg para" data-estado="para" src="./assets/images/icons/PA.svg" alt="">
-                    <img class="points-flg paraiba" data-estado="para" src="./assets/images/icons/PB.svg" alt="">
-                    <img class="points-flg piaui" data-estado="para" src="./assets/images/icons/PI.svg" alt="">
-                    <img class="points-flg parana" data-estado="para" src="./assets/images/icons/PR.svg" alt="">
-                    <img class="points-flg rio_de_janeiro" data-estado="para" src="./assets/images/icons/RJ.svg" alt="">
-                    <img class="points-flg rio_grande_do_sul" data-estado="para" src="./assets/images/icons/RS.svg" alt="">
-                    <img class="points-flg santa_catarina" data-estado="para" src="./assets/images/icons/SC.svg" alt="">
-                    <img class="points-flg sergipe" data-estado="para" src="./assets/images/icons/SE.svg" alt="">
-                    <img class="points-flg sao_paulo" data-estado="para" src="./assets/images/icons/SP.svg" alt="">
+                    <img class="points-flg alagoas" data-estado="Alagoas" src="./assets/images/icons/AL.svg" alt="">
+                    <img class="points-flg bahia" data-estado="Bahia" src="./assets/images/icons/BA.svg" alt="">
+                    <img class="points-flg distrito_federal" data-estado="BrasiliaDistritoFederal"
+                        src="./assets/images/icons/DF.svg" alt="">
+                    <img class="points-flg espirito_santo" data-estado="EspiritoSanto"
+                        src="./assets/images/icons/ES.svg" alt="">
+                    <img class="points-flg goias" data-estado="Goias" src="./assets/images/icons/GO.svg" alt="">
+                    <img class="points-flg minas_gerais" data-estado="MinasGerais" src="./assets/images/icons/MG.svg"
+                        alt="">
+                    <img class="points-flg mato_grosso_do_sul" data-estado="MatoGrosso_do_Sul"
+                        src="./assets/images/icons/MS.svg" alt="">
+                    <img class="points-flg para" data-estado="Para" src="./assets/images/icons/PA.svg" alt="">
+                    <img class="points-flg paraiba" data-estado="Paraiba" src="./assets/images/icons/PB.svg" alt="">
+                    <img class="points-flg piaui" data-estado="Piaui" src="./assets/images/icons/PI.svg" alt="">
+                    <img class="points-flg parana" data-estado="Parana" src="./assets/images/icons/PR.svg" alt="">
+                    <img class="points-flg rio_de_janeiro" data-estado="Rio_deJaneiro"
+                        src="./assets/images/icons/RJ.svg" alt="">
+                    <img class="points-flg rio_grande_do_sul" data-estado="RioGrand_do_Sul"
+                        src="./assets/images/icons/RS.svg" alt="">
+                    <img class="points-flg santa_catarina" data-estado="SantaCatarina"
+                        src="./assets/images/icons/SC.svg" alt="">
+                    <img class="points-flg sergipe" data-estado="Sergipe" src="./assets/images/icons/SE.svg" alt="">
+                    <img class="points-flg sao_paulo" data-estado="SaoPaulo" src="./assets/images/icons/SP.svg" alt="">
                 </div>
             </map>
         </section>
@@ -493,6 +500,33 @@
             <a href=""><img src="./assets/images/ex/c]onlatingraf.png" alt=""></a>
         </section>
     </main>
+    <script>
+        const items = [...document.querySelectorAll('.points-flg')],
+        links = {
+            "Alagoas": "www.google.com.br",
+            "Bahia": "www.google.com.br",
+            "BrasiliaDistritoFederal": "www.google.com.br",
+            "EspiritoSanto": "www.google.com.br",
+            "Goias": "www.google.com.br",
+            "MinasGerais": "www.google.com.br",
+            "MatoGrosso_do_Sul": "www.google.com.br",
+            "Para": "www.google.com.br",
+            "Paraiba": "www.google.com.br",
+            "Piaui": "www.google.com.br",
+            "Parana": "www.google.com.br",
+            "Rio_deJaneiro": "www.google.com.br",
+            "RioGrand_do_Sul": "www.google.com.br",
+            "SantaCatarina": "www.google.com.br",
+            "Sergipe": "www.google.com.br",
+            "SaoPaulo": "www.tenis.com.br"
+        };
+        
+        items.map(e => {
+            const currentItem = document.querySelector('#'+e.dataset.estado);
+            const currentLink = currentItem.querySelector('a');
+            currentLink.setAttribute('xlink:href', links[e.dataset.estado]);
+        });
+    </script>
     <footer class="footer">
         <div class="footer__newsletter">
             <div class="wrapper">
