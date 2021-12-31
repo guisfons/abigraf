@@ -539,3 +539,116 @@
         font-weight: 800;
     }
 }
+
+
+map {
+    position: relative;
+}
+
+.points {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+    img.points-flg {
+        
+        .para {
+            position: absolute;
+            left: 47%;
+            top: 17%;
+        }
+        
+        .alagoas {
+            position: absolute;
+            left: 83%;
+            top: 28%;
+        }
+        
+        .paraiba {
+            position: absolute;
+            left: 83%;
+            top: 22%;
+        }
+        
+        .sergipe {
+            position: absolute;
+            top: 31%;
+            left: 81%;
+        }
+        
+        .piaui {
+            position: absolute;
+            top: 23%;
+            left: 70%;
+        }
+        
+        .bahia {
+            position: absolute;
+            top: 36%;
+            left: 71%;
+        }
+        
+        .distrito_federal {
+            position: absolute;
+            top: 43.2%;
+            left: 58.5%;
+        }
+        
+        .espirito_santo {
+            position: absolute;
+            top: 52%;
+            left: 74.4%;
+        }
+        
+        .goias {
+            position: absolute;
+            top: 45%;
+            left: 54%;
+        }
+        
+        .minas_gerais {
+            position: absolute;
+            top: 52%;
+            left: 64%;
+        }
+        
+        .mato_grosso_do_sul {
+            position: absolute;
+            top: 56%;
+            left: 44%;
+        }
+        
+        .parana {
+            position: absolute;
+            top: 66%;
+            left: 50%;
+        }
+        
+        .rio_de_janeiro {
+            position: absolute;
+            top: 60%;
+            left: 70%;
+        }
+        
+        .rio_grande_do_sul {
+            position: absolute;
+            top: 80%;
+            left: 48%;
+        }
+        
+        .santa_catarina {
+            position: absolute;
+            top: 72%;
+            left: 54%;
+        }
+        
+        .sao_paulo {
+            position: absolute;
+            top: 60%;
+            left: 57%;
+        }
+    }
+}
