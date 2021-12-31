@@ -44,10 +44,18 @@
             height: fit-content;
             max-width: 41.5rem;
 
-            a path {
-                fill: $vermelho !important;
+            .gray-path path {
+                fill: #999 !important;
             }
         }
+    }
+}
+
+.points-flg {
+    display: none;
+
+    &.show {
+        display: block;
     }
 }
 
