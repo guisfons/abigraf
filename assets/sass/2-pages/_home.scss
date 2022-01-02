@@ -52,11 +52,6 @@
                 fill: #DE1026!important;
             }
 
-            .points-flg.nordeste {
-                position: absolute;
-                top: 30%;
-                left: 70%;
-            }
         }
     }
 }
@@ -66,6 +61,12 @@
 
     &.show {
         display: block;
+    }
+
+    &.nordeste {
+        position: absolute;
+        top: 30%;
+        left: 70%;
     }
 }
 
