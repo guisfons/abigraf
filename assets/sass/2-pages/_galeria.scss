@@ -67,14 +67,18 @@
         flex-wrap: wrap;
         column-gap: 5.9rem;
         row-gap: 7.2rem;
+        margin-top: 6.5rem;
+
+        @include sm {
+            justify-content: center;
+        }
 
         &__card {
             display: flex;
             flex-direction: column;
 
             img {
-                max-width: 32rem;
-                width: 100%;
+                width: 32rem;
                 height: 32rem;
                 object-fit: cover;
             }
@@ -99,6 +103,12 @@
                 font-weight: 700;
                 color: $vermelho;
                 line-height: 3rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: $preto;
             }
         }
     }
