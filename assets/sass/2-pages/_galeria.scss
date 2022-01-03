@@ -67,7 +67,7 @@
         flex-wrap: wrap;
         column-gap: 5.9rem;
         row-gap: 7.2rem;
-        margin-top: 6.5rem;
+        margin: 6.5rem auto 7.2rem;
 
         @include sm {
             justify-content: center;
